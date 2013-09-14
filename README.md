@@ -8,6 +8,8 @@ AngularJS Demo App
 * Template Loader
 * Wrapper Widget
 
+## Blog
+Some more information in my [blog](http://angularcorner.blogspot.com/)
 
 ## How To
 
