@@ -1,0 +1,44 @@
+/*
+    This example was taken from here: http://www.menucool.com/tooltip/css-tooltip
+    I adjusted the code a bit for my needs...
+*/
+
+.tooltip {
+    outline:none;
+}
+.tooltip strong {line-height:10px;}
+.tooltip:hover {text-decoration:none;}
+.tooltip span {
+
+    position:absolute;
+    opacity: 0;
+    z-index:10; padding:14px 20px;
+    margin-top:-15px; margin-left:0px;
+    width:300px; line-height:16px;
+    border:1px solid #DCA; background:#fffAF0;
+    color:#111;
+
+    -webkit-transition: all 1s ease-in-out !important;
+    -moz-transition: all 1s ease-in-out !important;
+    -ms-transition: all 1s ease-in-out !important;
+    -o-transition: all 1s ease-in-out !important;
+    transition: all 1s ease-in-out !important;
+}
+.tooltip:hover span, .tooltip .tiptrans {
+    margin-left:28px;
+    opacity: .7;
+}
+
+.callout {z-index:20;position:absolute;top:15px;border:0;left:-12px;}
+
+/*CSS3 extras*/
+.tooltip span
+{
+    border-radius:4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+
+    -moz-box-shadow: 2px 2px 5px #CCC;
+    -webkit-box-shadow: 2px 2px 5px #CCC;
+    box-shadow: 2px 2px 5px #CCC;
+}

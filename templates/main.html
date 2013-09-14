@@ -1,0 +1,62 @@
+<script>
+    /**
+     * JQueryUI for button decoration
+     */
+    $(function () {
+        $("input[type=submit], a, button")
+                .button()
+                .click(function (event) {
+                    event.preventDefault();
+                });
+    });
+
+</script>
+
+<div id="mainview">
+
+
+    <!-- Top Navigation Bar -->
+    <span class="tooltip">
+        <label  class="tooltip">Navigate To:</label>
+        <span id="helptip">
+            <img class="callout" src="images/callout.gif" />
+            <strong>Try the demo buttons to switch templates</strong>
+        </span>
+    </span>
+
+    <div id="btnContainer" style="width:100%">
+        <div style="width:100%;" ng-repeat="btnItem in buttons">
+            <button style="margin: 12px 2px 12px 2px; float:left" ng-click="btnItem.click()">{{btnItem.name}}</button>
+        </div>
+    </div>
+
+    <!-- Content display according to the navigation button selection "demo1 template selected by default" -->
+    <div  style="height:100%; width:100%">
+        <dtemplate style="height:100%" src="{{navigateTo}}" />
+    </div>
+
+    <script>
+
+        var h1 = setTimeout(function() {
+            $("#helptip").addClass('tiptrans');
+        }, 200);
+        var h2 = setTimeout(function() {
+            $("#helptip").removeClass('tiptrans');
+        }, 4000);
+
+        $("#btnContainer").css("height", "20px");
+
+        $("#btnContainer").mouseover(function() {
+            clearTimeout(h2);
+            clearTimeout(h1);
+            $("#helptip").addClass('tiptrans');
+        });
+
+        $("#btnContainer").mouseout(function() {
+            $("#helptip").removeClass('tiptrans');
+        });
+    </script>
+
+</div>
+
+

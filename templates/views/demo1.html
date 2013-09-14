@@ -1,0 +1,31 @@
+<div class="panel" ng-controller="app.controllers.democtrl">
+
+    <div>
+        <h2>Demo 1 Template</h2>
+        views/demo1.html template loaded.
+    </div>
+
+    <wrapper label="Dynamic Template Content" refobject="wrapperdemo" style="float:left" >
+        <div style= "padding: 10px;">
+            <strong>{{wrapperdemo.dynname}}</strong>
+            <div style="padding: 5px">{{wrapperdemo.dynname}}</div>
+        </div>
+    </wrapper>
+
+    <wrapper label="Panel Label" style="float:left" >
+        <div style= "padding: 10px;">
+            <strong>Custom Content</strong>
+            <div style="padding: 5px">This is a custom content</div>
+        </div>
+    </wrapper>
+
+    <wrapper label="Panel Label" width="200" height="200" style="float:left" >
+        <div style= "width: 80%; margin: 10px; padding: 10px; border: 1px solid darkorange; float: left">
+            <strong>Custom Panel</strong>
+        </div>
+        <div style= "width: 80%; margin: 10px; padding: 10px; border: 1px solid darkorange; float:left">
+            <strong>Custom Panel</strong>
+        </div>
+    </wrapper>
+
+</div>
