@@ -9,7 +9,7 @@ AngularJS Demo App
 * Wrapper Widget
 
 ## Blog
-Some more information in my [blog](http://angularcorner.blogspot.com/)
+Some more information at [AngularJS Corner](http://angularcorner.blogspot.com/) blog
 
 ## How To
 
